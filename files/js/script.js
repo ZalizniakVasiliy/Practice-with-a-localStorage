@@ -10,5 +10,6 @@
       userData[item.name] = item.value;
     }
     localStorage.setItem(`dataStorage`, JSON.stringify(userData));
+    event.target.reset();
   });
 })();
