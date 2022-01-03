@@ -6,9 +6,9 @@
 
   for (let key in dataLocalStorage) {
     const li = document.createElement(`li`);
-    li.append(`${key} : ${dataLocalStorage[key]}`);
-    if (dataLocalStorage[key] === "") {
-      console.log(`This user hadn't entered all data yet.`);
+    li.append(`${key}: ${dataLocalStorage[key]}`);
+    if (dataLocalStorage[key].trim() === "") {
+      alert(`This user hadn't entered all data yet.`);
       return;
     }
     ul.append(li);
